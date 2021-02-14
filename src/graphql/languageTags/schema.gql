@@ -1,0 +1,11 @@
+type LanguageTag {
+  id: ID!
+  name: String!
+  nativeName: String!
+  dir: String!
+}
+
+type Query {
+  allLanguageTags: [LanguageTag!]!
+  languageTag(id: ID!): LanguageTag
+}
